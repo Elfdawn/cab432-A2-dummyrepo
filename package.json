@@ -1,0 +1,24 @@
+{
+  "name": "linkbox",
+  "version": "0.3.0",
+  "description": "A tiny URL shortener - CLI and REST API demo repo for the Repository Custodian agent",
+  "type": "module",
+  "main": "src/api.js",
+  "bin": {
+    "linkbox": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/api.js",
+    "cli": "node src/cli.js",
+    "seed-issues": "node scripts/seed-issues.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@octokit/rest": "^21.0.2"
+  }
+}
