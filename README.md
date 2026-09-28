@@ -41,6 +41,14 @@ See [`docs/cli-usage.md`](docs/cli-usage.md) and [`docs/api.md`](docs/api.md)
 for full command/endpoint reference, and [`docs/architecture.md`](docs/architecture.md)
 for how the pieces fit together.
 
+## Custom Codes
+
+When using the `--code` option to specify a custom short code, please note:
+- Custom codes must be unique across all links in the database
+- If you attempt to use a code that's already taken, the tool will report an error
+- Consider using the random code generation (omit `--code`) or try a different custom code
+- Future improvements may include suggesting alternative available codes
+
 ## Project status
 
 This is a demo project maintained as part of an assignment
